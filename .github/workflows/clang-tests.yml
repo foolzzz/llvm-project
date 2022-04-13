@@ -31,6 +31,7 @@ jobs:
       matrix:
         os:
           - macOS-latest
+          - self-hosted
     steps:
     - name: Install Ninja
       uses: foolzzz/actions/install-ninja@main
