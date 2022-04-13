@@ -30,7 +30,6 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - macOS-latest
           - self-hosted
     steps:
     - name: Install Ninja
