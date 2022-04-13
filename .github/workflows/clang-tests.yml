@@ -15,7 +15,6 @@ on:
       - 'llvm/**'
       - '.github/workflows/clang-tests.yml'
   workflow_dispatch:
-    x:
 
 concurrency:
   # Skip intermediate builds: always.
@@ -35,7 +34,7 @@ jobs:
     steps:
     - name: Install Ninja
       uses: foolzzz/actions/install-ninja@main
-    - uses: actions/checkout@v1
+    - uses: foolzzz/checkout@v1
       with:
         fetch-depth: 250
     - name: Test clang
