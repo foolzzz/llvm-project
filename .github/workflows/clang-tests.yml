@@ -33,11 +33,6 @@ jobs:
         os:
           - macOS-latest
     steps:
-    - name: Setup Windows
-      if: startsWith(matrix.os, 'windows')
-      uses: llvm/actions/setup-windows@main
-      with:
-        arch: amd64
     - name: Install Ninja
       uses: llvm/actions/install-ninja@main
     - uses: actions/checkout@v1
